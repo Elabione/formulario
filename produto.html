@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produto</title>
+</head>
+<body>
+    <form action="#">
+
+        <fieldset>
+            <legend>Produto</legend>
+            <label for="inome">Nome</label>
+            <input id="inome" name="txtnome" type="text">
+            <br>
+
+            <label for="idata">Data de Cadastro</label>
+            <input id="idata" name="idata" type="date">    
+            <br>
+
+            <label for="ipeso">Peso</label>
+            <input name="slpeso" id="ipeso" type="number">
+            <br>
+
+            <label for="icategoria">Categoria</label>
+            <select name="slcategoria" id="icategoria">
+                <option value="E">Eletrônicos</option>
+                <option value="M">Móveis</option></select>
+            <br>
+
+            <p>Tipo</p>
+            <label for="inovo">Novo</label>    
+            <input type="radio" id="inovo" name="tipo" value="tipo">
+            <br>
+            <label for="iusuario">Usado</label>    
+            <input type="radio" id="iusuario" name="tipo" value="tipo">
+            <br>
+            <p>Descrição</p>
+            <textarea name="txtdescricao" id="idescricao" cols="30" rows="5"></textarea>
+            <br>
+         
+            <label class="rating-label">
+                <strong>Avaliação</strong>
+                <input
+                  class="rating"
+                  max="5"
+                  oninput="this.style.setProperty('--value', this.value)"
+                  step="1"
+                  type="range"
+                  value="1">
+            <br>
+
+            <input type="submit" value="ENTRAR"> 
+            <input type="submit" value="LIMPAR">  
+        </fieldset>
+    </form>
+    
+</body>
+</html>
+
